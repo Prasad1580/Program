@@ -1,0 +1,26 @@
+package com.tka1.dao;
+
+import java.util.ArrayList;
+
+import org.hibernate.Criteria;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.criteria.internal.CriteriaDeleteImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka1.entity.CricketStaff;
+
+@Repository
+
+public class WorldcupCricketDao {
+	
+	@Autowired
+	SessionFactory factory;
+	
+	public ArrayList<Criteria> allIndianCricketstaff()
+	{
+	
+	return null;
+
+}
+}

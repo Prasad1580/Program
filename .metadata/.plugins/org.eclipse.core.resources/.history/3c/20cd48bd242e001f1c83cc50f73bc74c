@@ -1,0 +1,42 @@
+package com.tka.entity;
+
+public class Crickstaff {
+	int staffid;
+	String staffname;
+	int staffage;
+	@Override
+	public String toString() {
+		return "Crickstaff [staffid=" + staffid + ", staffname=" + staffname + ", staffage=" + staffage + "]";
+	}
+	public int getStaffid() {
+		return staffid;
+	}
+	public void setStaffid(int staffid) {
+		this.staffid = staffid;
+	}
+	public String getStaffname() {
+		return staffname;
+	}
+	public void setStaffname(String staffname) {
+		this.staffname = staffname;
+	}
+	public int getStaffage() {
+		return staffage;
+	}
+	public void setStaffage(int staffage) {
+		this.staffage = staffage;
+	}
+	public Crickstaff(int staffid, String staffname, int staffage) {
+		super();
+		this.staffid = staffid;
+		this.staffname = staffname;
+		this.staffage = staffage;
+	}
+	public Crickstaff() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

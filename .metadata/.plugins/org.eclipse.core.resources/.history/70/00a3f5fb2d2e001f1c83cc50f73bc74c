@@ -1,0 +1,23 @@
+package com.tka.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entity.Crickstaff;
+import com.tka.service.WorldcupcricketService;
+@RestController
+public class WorldcupcricketController {
+	@Autowired
+	WorldcupcricketService service;
+	
+	@GetMapping("hello")
+	public List<Crickstaff> getListOfStaff() {
+		
+		return service.listofallstaff();
+
+	}
+
+}

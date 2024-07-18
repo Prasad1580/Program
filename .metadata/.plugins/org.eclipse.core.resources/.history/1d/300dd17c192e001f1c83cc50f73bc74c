@@ -1,0 +1,25 @@
+package com.tka1.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.tka1.dao.WorldCupCricketStaff;
+import com.tka1.entity.CricketStaff;
+import com.tka1.service.WorldcupcricketService;
+
+@Controller
+public class WorldCupCricketController {
+
+	WorldcupcricketService service;
+
+	@GetMapping("test"")
+	public List<CricketStaff> getallstaff() {
+
+		return service.getallrecord();
+
+	}
+
+}

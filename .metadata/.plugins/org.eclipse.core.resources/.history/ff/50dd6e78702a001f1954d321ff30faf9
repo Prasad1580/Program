@@ -1,0 +1,10 @@
+package com.tka.entity;
+
+public class Faculty {
+	int fid;
+	String name;
+	int exp;
+	int sal;
+	
+
+}

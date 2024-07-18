@@ -1,0 +1,33 @@
+package com.tka1.dao;
+
+import java.util.List;
+
+import javax.websocket.Session;
+
+import org.hibernate.Criteria;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka1.entity.CricketStaff;
+
+@Repository
+public class WorldCupCricketDao {
+  
+	@Autowired
+	
+	SessionFactory factory;
+	
+
+	public List<CricketStaff> allCricketStaff(){
+		
+		
+		return null;
+		
+	
+		
+		
+	}
+  
+	
+}

@@ -1,0 +1,30 @@
+package com.tka.dao;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Repository;
+
+import com.tka.entity.Faculty;
+import com.tka.entity.Subject;
+
+@Repository
+public class FacultySubDao {
+	
+	public ArrayList<Faculty> allFacultysubinfo ()
+	{
+	
+	ArrayList<Subject> subList1 = new ArrayList<Subject>();
+	
+	subList.add(new Subject(1,"Java"));
+	subList.add(new Subject(1,"Python"));
+	
+	subList.add(new Subject(1,"Java"));
+	
+	
+	
+	return null;
+	
+	
+}
+
+}

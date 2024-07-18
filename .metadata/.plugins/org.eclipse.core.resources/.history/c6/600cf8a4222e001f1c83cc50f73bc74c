@@ -1,0 +1,10 @@
+package com.tka.entity;
+
+public class Crickstaff {
+	int staffid;
+	String staffname;
+	int staffage;
+	
+	
+
+}

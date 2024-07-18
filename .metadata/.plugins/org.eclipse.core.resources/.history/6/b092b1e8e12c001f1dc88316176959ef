@@ -1,0 +1,67 @@
+package com.tka1.entity;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class CricketStaff {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	int staffid;
+	String staffname;
+	String staffDept;
+	int staffAge;
+	int Nyears;
+	public CricketStaff() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public CricketStaff( String staffname, String staffDept, int staffAge, int nyears) {
+		super();
+		
+		this.staffname = staffname;
+		this.staffDept = staffDept;
+		this.staffAge = staffAge;
+		Nyears = nyears;
+	}
+	public int getStaffid() {
+		return staffid;
+	}
+	public void setStaffid(int staffid) {
+		this.staffid = staffid;
+	}
+	public String getStaffname() {
+		return staffname;
+	}
+	public void setStaffname(String staffname) {
+		this.staffname = staffname;
+	}
+	public String getStaffDept() {
+		return staffDept;
+	}
+	public void setStaffDept(String staffDept) {
+		this.staffDept = staffDept;
+	}
+	public int getStaffAge() {
+		return staffAge;
+	}
+	public void setStaffAge(int staffAge) {
+		this.staffAge = staffAge;
+	}
+	public int getNyears() {
+		return Nyears;
+	}
+	public void setNyears(int nyears) {
+		Nyears = nyears;
+	}
+	@Override
+	public String toString() {
+		return "CricketStaff [staffid=" + staffid + ", staffname=" + staffname + ", staffDept=" + staffDept
+				+ ", staffAge=" + staffAge + ", Nyears=" + Nyears + "]";
+	}
+	
+
+}

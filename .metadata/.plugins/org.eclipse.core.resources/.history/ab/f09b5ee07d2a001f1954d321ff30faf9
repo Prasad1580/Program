@@ -1,0 +1,20 @@
+package com.tka.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.FacultySubDao;
+import com.tka.entity.Faculty;
+
+@Service
+public class FacultySubService {
+	
+	FacultySubDao dao;
+	
+	public List<Faculty> getallrecord(){
+		return dao.allFacultysubinfo();
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.tka1.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka1.dao.WorldCupCricketStaff;
+import com.tka1.entity.CricketStaff;
+
+@Service
+public class WorldcupcricketService {
+	@Autowired
+
+	WorldCupCricketStaff dao;
+
+	public List<CricketStaff> getallrecord(){
+		return dao.allcricketStaff();
+	
+}
+}

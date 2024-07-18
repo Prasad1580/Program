@@ -1,0 +1,29 @@
+package com.tka.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entity.Faculty;
+import com.tka.service.FacultySubService;
+
+@RestController
+
+public class FacultySubController {
+
+	FacultySubService service;
+	
+	@GetMapping("/")
+	public String Test() {
+
+		return "testing";
+	}
+	
+	@GetMapping("fetch")
+	public List<Faculty> facultyinfo(){
+		return service.getallrecord();
+		
+	}
+
+}

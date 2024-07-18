@@ -1,0 +1,49 @@
+package com.tka.entity;
+
+public class Faculty {
+	int fid;
+	String name;
+	int exp;
+	int sal;
+	public Faculty() {
+		super();
+		
+	}
+	public Faculty(int fid, String name, int exp, int sal) {
+		super();
+		this.fid = fid;
+		this.name = name;
+		this.exp = exp;
+		this.sal = sal;
+	}
+	public int getFid() {
+		return fid;
+	}
+	public void setFid(int fid) {
+		this.fid = fid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getExp() {
+		return exp;
+	}
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+	public int getSal() {
+		return sal;
+	}
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+	@Override
+	public String toString() {
+		return "Faculty [fid=" + fid + ", name=" + name + ", exp=" + exp + ", sal=" + sal + "]";
+	}
+	
+
+}

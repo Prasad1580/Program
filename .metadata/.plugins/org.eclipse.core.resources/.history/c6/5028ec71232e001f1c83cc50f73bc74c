@@ -1,0 +1,24 @@
+package com.tka.dao;
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.tka.entity.Crickstaff;
+
+public class WorldcupcricketDao {
+	SessionFactory factory;
+
+	public List<Crickstaff> allIndianCricketStaffList() {
+
+		Session session = factory.openSession();
+		Criteria criteria = session.createCriteria(CrickStaff.class);
+		List<Crickstaff> crickstaffList = criteria.list();
+
+		return crickstaffList;
+
+	}
+
+}
